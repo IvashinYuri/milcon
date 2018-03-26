@@ -1,0 +1,122 @@
+//var name = $('#listSpares tbody tr').find("td").eq($('#listSpares').attr('selectRow')).html();
+
+
+/*$(':checkbox').change(function(){
+            if($(this).is(':checked')) console.log($(this).attr('id')); else console.log('2');
+        });*/
+
+
+
+            /*val helper = MimeMessageHelper(message)
+            helper.setFrom("milcon@ledmon.ru")
+            helper.setTo(to)
+            helper.setSubject(subject)
+
+            helper.setc
+            helper.setText(text)*/
+
+
+
+
+
+@Component("javasampleapproachMailSender")
+class MailSender{
+
+    @Autowired
+    var emailSender: JavaMailSenderImpl? = null
+
+    @Throws(Exception::class)
+    fun sendSimpleMessage(to: String, subject: String , text: String) {
+        var message = SimpleMailMessage();
+        message.setTo(to);
+        message.setSubject(subject);
+        message.setText(text);
+
+
+        if(emailSender == null) println("NULL")
+
+
+        emailSender?.send(message);
+    }
+}
+
+/*@Autowired
+    @Qualifier("javasampleapproachMailSender")
+    val mail: MailSender?=null*/
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="../../image/car.png" class = "top_menu_img"</img>
+<img src="../../image/exit.png" class = "top_menu_img" </img>
+
+
+
+<a href="#">info@ledmon.ru</a>
+
+<i class="glyphicon glyphicon-user"></i> Ивашин Юрий
+
+<li><a href="#">Персональные данные</a></li>
+
+div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+    <div class="title-bar-title">Menu</div>
+</div>
+<div class="top-bar" id="responsive-menu">
+    <div class="contaner">
+        <ul class="menu">
+            <p> </p>
+        </ul>
+    </div>
+</div>
+
+
+
+<div style="top:0; position: fixed; width: 100%; background-color: rgba(229,229,229,0.91); height: 3rem; z-index: 10">
+        <div class="contaner">
+            <ul class="menu">
+                <button type="button" class="button margin-bottom-0 font-size-1" style="float:left" onclick="window.location.href='/'">Список автомобилей</button>
+                <button type="button" class="button margin-bottom-0 font-size-1" style="float:left; margin-left: 1rem" onclick="window.location.href='/'">Список автомобилей</button>
+            </ul>
+        </div>
+    </div>
+
+<h4 class="text-left margin-bottom-0 title_decor padding-top-03  padding-left-2">МИЛКОН</h4>
+<h5 class="text-left title_decor padding-bottom-05 padding-left-2">Mileage of consumables</h5>
+
+
+//@DateTimeFormat(iso = DateTimeFormat.ISO.TIME)
+//@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
+
+
+
+println(System.getProperty("user.dir"))
+        //val path = "static/image/vaz_2131.jpg"
+        //println(javaClass.classLoader.getResource(path)!!.toString())
+        val path2 = "templates/index.ftl"
+        println(javaClass.classLoader.getResource(path2)!!.toString())
+
+
+        //val file = File(MilconApplication.getProtectionDomain().getCodeSource().getLocation().toURI().getPath());
+        val fooDir = File(javaClass.classLoader.getResource("").toString());
+        println(fooDir)
+
+
+        val cp = ApplicationPath().get()
+        println(cp.toString())
+
+
+
+
+
+
+
+        model.addAttribute("pathImage", System.getProperty("user.dir"))

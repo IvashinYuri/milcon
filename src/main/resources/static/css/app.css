@@ -1,0 +1,79 @@
+@import "fonts.css";
+
+@media (max-width: 799px){
+    .contaner{width:100%}
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+    .contaner{width:90%;margin-left:5%}
+    .top-bar-app{padding: 0; padding-left: 5%; padding-right: 5%}
+}
+@media (min-width: 1280px) and (max-width: 1599px) {
+    .contaner{width:74%;margin-left:13%}
+    .top-bar-app{padding: 0; padding-left: 13%; padding-right: 13%}
+}
+@media (min-width: 1600px){
+    .contaner{width:58%; margin-left:21%}
+    .reveral_app{width:30%; margin-left:35%}
+    .top-bar-app{padding: 0; padding-left: 21%; padding-right: 21%}
+}
+
+body {
+    background: #f1f1f1;
+    font-family: RobotoApp, serif;
+    color: #1779BA;
+}
+
+
+label.middle{margin:0 0 .8rem; padding:.4rem 0 .5625rem 0; font-size: 1.0rem}
+
+.title_decor{background-color: #1779ba; color: #fefefe; font-family: Arial, serif;}
+.margin-top-1{margin-top: 1rem;}.margin-top-05{margin-top: .5rem;}.margin-top-2{margin-top: 2rem;}
+.margin-bottom-0{margin-bottom: 0;}.margin-bottom-05{margin-bottom: .5rem;}.margin-bottom-2{margin-bottom: 2rem;}
+.margin-left-0{margin-left: 0;}.margin-left-05{margin-left: .5rem;}.margin-left-1{margin-left: 1rem;}
+.margin-right-1{margin-right: 1rem !important;}.margin-right-2{margin-right: 2rem;}.margin-right-3{margin-right: 3rem;}
+.padding-left-2{padding-left: 2rem}
+.padding-top-0{padding-top: 0;}.padding-top-03{padding-top: .3rem;}.padding-top-05{padding-top: .5rem;}.padding-top-1{padding-top: 1rem;}.padding-top-2{padding-top: 2rem;}
+.padding-bottom-03{padding-bottom: .3rem;}.padding-bottom-05{padding-bottom: .5rem;}.padding-bottom-1{padding-bottom: 1rem;}.padding-bottom-2{padding-bottom: 2rem;}
+.font-size-1{font-size: 1.0rem !important;}
+.position-right{float:right;}.position-left{float:left;}
+
+
+.tabs-title-app>a {
+    font-size: .9rem;
+}
+.select_row {
+    background-color:#d7ecfa !important;
+    color: #0a0a0a;
+    outline:0;
+}
+.display_none {
+    display: none;
+}
+.button_app{
+    margin-right: .5rem;
+    margin-bottom: 0;
+    padding-top: .55rem;
+    padding-bottom: .55rem;
+}
+.accordion-title_app {
+    font-size: 1.0rem;
+}
+.table_td_app {
+    padding-bottom: 0;
+}
+.top_menu_title {
+    color:#000000;
+    margin-bottom: 0;
+    font-family: RobotoApp, serif;
+    padding-top: .5rem;
+}
+.top_menu_img {
+    margin-left: 1rem;
+    margin-top: 10px;
+    margin-right: -.5rem;
+    height: 18px;
+    opacity: .5;
+ }
+.select_disabled {color: #c7c7c7;}
+.select_enabled {color: #0a0a0a;}
+.form_person{margin-left: 10%; margin-right: 20%}
